@@ -1,0 +1,251 @@
+/* GENERAL STYLES */
+p {
+    font-family: Georgia, 'Times New Roman', Times, serif
+}
+
+header, main {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+
+
+
+
+
+/* HEADER AND NAVBAR */
+
+.nav-link {
+    font-family: 'Montserrat';
+    transition: all .15s ease-in;
+}
+
+.nav-link:hover {
+    color: #80C1B8;
+}
+
+.nav-link + .nav-link {
+    margin-left: 1rem;
+}
+
+.no-scroll {
+    height: 100%;
+    overflow-y: hidden;
+}
+
+.nav-popup {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: #E8E6E6;
+    transform: translateX(100%);
+    transition: all .15s ease-in;
+}
+
+.show-popup {
+    transform: translateX(0);
+}
+
+.popup-container {
+    position: relative;
+    top: 100px;
+}
+
+.popup-link {
+    width: 75%;
+    color: black;
+    text-decoration: none;
+    font-size: 1.25rem;
+    border-bottom: 1px solid grey;
+    padding-bottom: .75em;
+    transition: all .15s ease-in;
+}
+
+.popup-link + .popup-link {
+    margin-top: .75em;
+}
+
+.popup-link:hover {
+    color: #80C1B8;
+}
+
+.menu-btn, .close-popup {
+    background: none;
+    border: none;
+}
+
+
+
+
+
+
+
+/* MAIN CONTENT */
+
+.content-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.green-background {
+    background-color: #80C1B8;
+    padding: 3rem 0;
+}
+
+section + section {
+    margin-top: 6rem;
+}
+
+
+/* BANNER */
+
+.banner-text, .banner-img {
+    height: 600px;
+}
+
+.banner-text {
+    background-color: #80C1B8;
+    min-height: 300px;
+}
+
+.banner-text p {
+    color: white;
+    font-size: 2rem;
+    max-width: 362px;
+}  
+
+.contact-btn {
+    font-family: 'Montserrat';
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+    transition: all .15s ease-in;
+}
+
+.contact-btn:hover {
+    background: white;
+    color: #80C1B8;
+}
+
+.banner-img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+
+
+/* ABOUT ME */
+
+
+.about-text {
+    max-width: 600px;
+    font-size: 1rem;
+}
+
+
+
+/* HEADING STYLES */
+
+.white-heading {
+    width: fit-content;
+    font-size: 1rem;
+    font-family: 'Montserrat';
+    color: white;
+    text-align: center;
+    border-bottom: 1px solid white;
+}
+
+.green-heading {
+    width: fit-content;
+    font-size: 1rem;
+    font-family: 'Montserrat';
+    color: black;
+    text-align: center;
+    border-bottom: 1px solid #80C1B8;
+}
+
+.dark-heading {
+    width: fit-content;
+    font-size: 1rem;
+    font-family: 'Montserrat';
+    color: black;
+    text-align: center;
+    border-bottom: 1px solid black;
+}
+
+.fullgreen-heading {
+    width: fit-content;
+    font-size: 1rem;
+    font-family: 'Montserrat';
+    color: #80C1B8;
+    text-align: center;
+    border-bottom: 1px solid #80C1B8;
+}
+
+
+
+/* SERVICES AND FEES */
+.service-container {
+    width: 100%;
+}
+
+.service-card {
+    border: 1px solid white;
+    width: 95%;
+    max-width: 600px;
+}
+
+
+
+
+
+
+
+/* TESTIMONIES */
+.testimony {
+    border: 1px solid #80C1B8;
+    max-width: 600px;
+}
+
+
+
+
+
+/* RESPONSIVENESS */
+
+@media (min-width: 768px) {
+    .banner-text, .banner-img {
+        width: 50%;
+        height: 700px;
+    }
+
+    .about-text {
+        font-size: 1.5rem;
+    }
+}
+
+@media (min-width: 992px) {
+    .testimony {
+        width: calc(100% / 3);
+        height: 400px;
+    }
+
+
+    .testimony:nth-of-type(1) h3, .testimony:nth-of-type(1) p {
+        position: relative;
+        top: 35px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .testimony:nth-of-type(1) h3, .testimony:nth-of-type(1) p {
+        position: relative;
+        top: 25px;
+    }
+}
