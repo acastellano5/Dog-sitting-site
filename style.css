@@ -211,10 +211,26 @@ section + section {
 .testimony {
     border: 1px solid #80C1B8;
     max-width: 600px;
+	max-height: 300px;
 }
-
-
-
+.contact-box{
+	border: 1px solid #80C1B8;
+    max-width: 600px;
+	max-height: 100px;
+}
+.email-btn{
+	font-family: 'Montserrat';
+    background: transparent;
+    border: 1px solid white;
+    transition: all .15s ease-in;
+}
+.phone-btn{
+	font-family: 'Montserrat';
+    background: transparent;
+    border: 1px solid white;
+    transition: all .15s ease-in;
+	
+}
 
 
 /* RESPONSIVENESS */
@@ -242,6 +258,7 @@ section + section {
         top: 35px;
     }
 }
+
 
 @media (min-width: 1024px) {
     .testimony:nth-of-type(1) h3, .testimony:nth-of-type(1) p {
